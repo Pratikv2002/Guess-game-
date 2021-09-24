@@ -1,0 +1,45 @@
+]'/ import java.util.Scanner; ex v  .0oiplp7\][poiuytrewq	qwertyuiopasdfghjkl;.'/
+-/8+952
+0 
+   }
+   void takeUserInput(){
+       System.out.println("Guess the number");
+        Scanner sc = new Scanner (System.in);
+        int inputNumber =sc.nextInt();
+       
+   }
+  boolean isCorrectNumber(){
+      noOfGuess ++;
+      if (inputNumber==number){
+      return true;
+      }
+      else if (inputNumber<number){
+          System.out.println("to low...");
+      }
+      else if (inputNumber>number){
+          System.out.println("to high....");
+      }
+      
+      
+     return false; 
+    
+        
+       
+  
+  }
+}
+
+public class pratik10 {
+    public static void main(String[] args) {
+        boolean b=false;
+        Game g = new Game(); 
+        while(!b){
+      
+        g.takeUserInput();
+         b = g.isCorrectNumber();
+        System.out.println(b);
+       
+        }
+    }
+        
+}
